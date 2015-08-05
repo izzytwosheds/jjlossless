@@ -147,6 +147,11 @@ public class Frame {
             return false;
         }
 
+        if (numberOfImageComponents != 1) {
+            System.out.println("This version supports only grayscale images");
+            return false;
+        }
+
         if (length != numberOfImageComponents * 3 + 8) {
             System.out.println("Bad length");
             return false;
